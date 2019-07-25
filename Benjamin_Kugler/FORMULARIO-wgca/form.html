@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+<body>
+    <main>
+        <h3>BUY FLIGHT TICKETS EASY</h3>
+        <form action="post">
+            <section class="information clearfix">
+                <div class="left">
+                    <div class="caja">
+                        <label for="first-name">First name: </label>
+                        <input type="text" maxlength="50" id="first-name" name="textfield" required>
+                    </div>
+                    <div class="caja">
+                        <label for="last-name">Last name: </label>
+                        <input type="text" maxlength="50" id="last-name" name="textfield" required>
+                    </div>
+                    <div class="caja">
+                        <div class="select">
+                            <label for="departures" class="visuallyhidden">Departures: </label>
+                            <select id="departures" name="departures" required>
+                                <option label="From" value="" disabled selected>From</option>
+                                <option label="Corrientes" value="Corrientes">Corrientes</option>
+                                <option label="Chaco" value="Chaco">Chaco</option>
+                                <option label="BuenosAires" value="Buenosaires">Buenos Aires</option>
+                            </select>
+                        </div> 
+                    </div>
+                    <div class="caja">
+                        <label for="arrivals" class="visuallyhidden">Arrivals: </label>
+                        <select id="arrivals" name="arrivals">
+                            <option label="To" disabled selected>To</option>
+                            <option label="Corrientes"></option>
+                            <option label="Chaco"></option>
+                            <option label="Buenosaires"></option>
+                        </select>
+                    </div>
+                    <div class="caja linea">
+                            <input id="one-way" checked type="radio" name="trip" value="one-way"/>
+                            <label for="one-way">One-way</label>
+                            <input id="round-trip" type="radio" name="trip" value="round-trip"/>
+                            <label for="round-trip">Round-Trip</label>
+        
+                    </div>
+                </div>
+                <div class="right">
+                    <div><p>How many people are traveling with you?</p></div>
+                    <div class="caja">
+                        <label for="adults">Adults > 13: </label>
+                        <select id="adults" name="adults">
+                                <option label="1"selected>To</option>
+                                <option label="2"></option>
+                                <option label="3"></option>
+                                <option label="4"></option>
+                                <option label="5"></option>
+                                <option label="6"></option>
+                                <option label="7"></option>
+                                <option label="8"></option>
+                                <option label="9"></option>
+                                <option label="0"></option>
+                            </select>
+                    </div>
+                    <div class="caja">
+                            <label for="children">Children: </label>
+                            <select id="children" name="children">
+                                    <option label="0"selected>To</option>
+                                    <option label="1"></option>
+                                    <option label="2"></option>
+                                    <option label="3"></option>
+                                    <option label="4"></option>
+                                    <option label="5"></option>
+                                    <option label="6"></option>
+                                    <option label="7"></option>
+                                    <option label="8"></option>
+                                    <option label="9"></option>
+                                </select>
+                        </div>
+                </div>
+            </section>
+    
+            <section class="dates">
+                <div class="caja clearfix">
+                    <div class="departure-date">
+                        <label for="departure-date">Departure date:</label>
+                        <input type="date" id="departure-date" name="departure-date">
+                    </div>
+                    <div class="comeback-date">
+                        <label for="comeback-date">Come back date:</label>
+                        <input type="date" id="comeback-date" name="comeback-date">
+                    </div>
+                </div>
+        </section>
+            <div class="caja">
+                <input type="submit" aria-label="Search flights" value="Search flights" id="btn">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
