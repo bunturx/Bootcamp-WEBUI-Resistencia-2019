@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang=en>
+
+	<head>
+		<title>Bootcamp Day 2</title>
+	</head>
+
+	<body>
+
+
+		<form action="form.html" method="get" id="form" name="form" aria-label="send your personal information">
+
+
+			<fieldset>
+				<legend>Personal Information</legend>
+				<p>
+					<label for="name">Name</label>
+					<br>
+					<input type="text" name="name" id="name" placeholder="your name" required>
+				</p>
+
+
+				<p>
+					<label for="surname">Surname</label>
+					<br>
+					<input type="text" name="surname" id="surname" placeholder="your surname" required>				
+				</p>
+
+
+				<p>
+					<label for="birthdate">Birthdate</label>
+					<br>
+					<input type="date" name="birthdate" id="birthdate" required>
+				</p>
+			</fieldset>
+
+
+
+
+
+			<fieldset>
+			    <legend>Country</legend>
+			    <p>
+			      <input type="radio" name="country" id="country_1" value="argentina" />
+			      <label for="country_1">Argentina</label>
+			    </p>
+			    <p>
+			      <input type="radio" name="country" id="country_2" value="chile" />
+			      <label for="country_2">Chile</label>
+			    </p>
+			    <p>
+			      <input type="radio" name="country" id="country_3" value="paraguay" />
+			      <label for="country_3">Paraguay</label>
+			    </p>
+			</fieldset>
+
+
+			<fieldset>
+				<legend>Interests</legend>
+				<input id="foods" type="checkbox" name="interests" value="foods" />
+				<label for="foods">Foods</label><br />
+
+				<input id="movies" type="checkbox" name="interests" value="movies" />
+				<label for="movies">Movies</label><br />
+
+				<input id="sports" type="checkbox" name="interests" value="sports" />
+				<label for="sports">Sports</label><br />
+
+
+			</fieldset>
+
+
+			<br>
+			<br>
+
+
+
+			<input type="submit" name="submit" value="Submit">
+
+		</form>
+
+
+	</body>
+
+</html>

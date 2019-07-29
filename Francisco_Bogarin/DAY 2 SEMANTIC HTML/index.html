@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./src/assets/css/style.css">
+    <link rel="shortcut icon" href="src/assets/img/favicon (1).ico" type="image/x-icon">
+   <title>Register Form Globant</title>
+</head>
+<body>
+<header aria-label="sign up"><h1>Sign up</h1></header>
+<main>
+    <form action="./process.html" class="container">
+        <fieldset>
+            <legend><h4>Personal Info</h4></legend>
+            <label for="fname">First Name:<br><input type="text" name="fname" maxlength="40" required title="First name field"><em>Required</em></label><br>
+            <label for="lname">Last Name:<br><input type="text" name="lname" maxlength="40" required title="Last name field"><em>Required</em></label><br>
+            <label for="email">Email:<br><input type="text" name="email" maxlength="40" required title="Email field"><em>Required</em></label><br><br>
+        </fieldset>
+        <fieldset>
+                <label for="birthday"><strong><legend>Birthday</legend></strong><br><br><input type="date" name="birthday" id="birthday" title="select your birthday"></label>
+        </fieldset>
+        <fieldset>
+                <legend><strong>Gender:</strong></legend>
+                <img src="./src/assets/img/male.ico" alt="maleIcon" width="15px" height="15px"><label>Male<input type="radio" name="genderOption" value="male" role="checkbox"></label>
+                <img src="./src/assets/img/femaleico.png" alt="femaleIcon" width="15px" height="15px"><label>Female<input type="radio" name="genderOption" value="female" role="checkbox"></label>
+                <img src="./src/assets/img/not specified.png" alt="notSpecifiedIcon" width="15px" height="15px"><label>No specified <input type="radio" name="genderOption" value="noSpecified" role="checkbox"></label>
+        </fieldset>
+        <fieldset>
+                <legend><h4>Account Info</h4></legend>
+                <label aria-label="Username">Username<br><input type="text" name="Username" maxlength="16" required title="username field"><em>Required</em></label><br>
+                <label aria-label="Password">Password<br><input type="password" name="psw" maxlength="32" required title="password field"><em>Required</em></label><br><br>
+            </fieldset>
+        <input type="submit" value="sign up">
+        <input type="reset" value="reset">
+    </form>
+</main>
+</body>
+</html>
