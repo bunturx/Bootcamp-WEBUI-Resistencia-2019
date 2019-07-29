@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 75%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+h1{
+    font-size: 5em;
+    color:orange;
+    font-style: italic;
+}
+.calculator{
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 530px;
+    width: 300px;
+    border-radius: 15px;
+    font-size: 2rem;
+    margin: 0 auto;
+}
+td{
+    padding: 0;
+    margin: 0;
+}
+table{
+    color: white;
+    width: 370px;
+}
+input{
+    display: block;
+    width: calculator(100%-40px);
+    height: 75px;
+    padding: 5px 20px 0;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #222;
+    text-align: right;
+}
+.btn{
+    margin: 2px;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+}
+.btn-cero{
+    margin: 2px;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    height: 60px;
+    width: 120px;
+    border-radius: 30px;
+}
+.gray{
+    background-color: gray;
+    color: #333;
+}
+.gray:hover{
+    background-color:#ddd;
+}
+.dark-gray{
+    background-color: #444;
+    color: white;
+}
+.dark-gray:hover {
+    background-color: #555;
+}
+.orange{
+    background-color: rgb(223, 154, 27);
+    color: white;
+}
+.orange:hover{
+    background-color: #f1b76b;
+}
+#result{
+    text-align: right;
+    display: block;
+    font-size: 60px;
+    background-color: #222;
+    height: 150px;
+    color: white;
+    width: 290px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
