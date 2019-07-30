@@ -135,11 +135,11 @@ function init(){
     }
     equal.onclick = function(e){
         operatorB = result.textContent;
-        resolve.resolve(operatorA,operatorB,operation);
+        resolve();
     }
     function resolve(){
         var res = 0;
-        switch(c){
+        switch(operation){
             case "+":
                 res = parseFloat(operatorA) + parseFloat(operatorB);
                 res = res.toFixed(2);
