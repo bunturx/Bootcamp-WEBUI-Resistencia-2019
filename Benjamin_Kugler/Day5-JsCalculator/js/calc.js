@@ -135,29 +135,8 @@ function init(){
     }
     equal.onclick = function(e){
         operatorB = result.textContent;
-        resolve();
+        resolve(operatorA,operatorB,operation);
     }
-    function resolve(){
-        var res = 0;
-        switch(operation){
-            case "+":
-                res = parseFloat(operatorA) + parseFloat(operatorB);
-                res = res.toFixed(2);
-                break;
-            case "-":
-                res = parseFloat(operatorA) - parseFloat(operatorB);
-                res = res.toFixed(2);
-                break;
-            case "/":
-                res = parseFloat(operatorA) / parseFloat(operatorB);
-                res = res.toFixed(2);
-                break;
-            case "*":
-                res = parseFloat(operatorA) * parseFloat(operatorB);
-                res = res.toFixed(2);
-                break;
-        }
-        result.textContent = res;
-    }
+    
 }
 
