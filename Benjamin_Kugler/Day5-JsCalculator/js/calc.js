@@ -1,8 +1,8 @@
-var operatorA;
-var operatorB;
-var operation = "";
-var clear = 1;
-
+    var operatorA;
+    var operatorB;
+    var operation = "";
+    var clear = 1;
+    var com = false;
 function init(){
     var result = document.getElementById("result");
     var nine = document.getElementById("nine");
@@ -23,16 +23,17 @@ function init(){
     var minus = document.getElementById("minus");
     var plus = document.getElementById("plus");
     var equal = document.getElementById("equal");
+
     
-    function isCero(){
-        if (result.textContent == "0")
-            result.textContent = "";
-    }
     function clean(){
         if (clear == 0){
             result.textContent = "";
             clear = 1;
         }
+    }
+    function isCero(){
+        if (result.textContent == "0")
+            result.textContent = "";
     }
     /*EVENTS*/
     nine.onclick = function(e){
@@ -86,14 +87,16 @@ function init(){
         result.textContent = result.textContent + "0";
     }
     coma.onclick = function(e){
-        if (result.textContent != "0"){
-            result.textContent = result.textContent + ".";
+        if (com == false){
+           result.textContent = result.textContent + ".";
+           com = true;
         }
     }
     clear.onclick = function(e){
         result.textContent = "0"
         operatorA = "";
         operatorB = "";
+        com = false;
     }
 
     /*OPERATIONS */
@@ -101,21 +104,25 @@ function init(){
         operatorA = result.textContent;
         operation = "+";
         clear = 0;
+        com = false;
     }
     minus.onclick = function(e){
         operatorA = result.textContent;
         operation = "-";
         clear = 0;
+        com = false;
     }
     divide.onclick = function(e){
         operatorA = result.textContent;
         operation = "/";
         clear = 0;
+        com = false;
     }
     times.onclick = function(e){
         operatorA = result.textContent;
         operation = "*";
         clear = 0;
+        com = false;
     }
     percentage.onclick = function(e){
         operatorA = result.textContent;
@@ -128,18 +135,18 @@ function init(){
     }
     equal.onclick = function(e){
         operatorB = result.textContent;
-        resolve();
-        
+        resolve.resolve(operatorA,operatorB,operation);
     }
-
     function resolve(){
         var res = 0;
-        switch(operation){
+        switch(c){
             case "+":
                 res = parseFloat(operatorA) + parseFloat(operatorB);
+                res = res.toFixed(2);
                 break;
             case "-":
                 res = parseFloat(operatorA) - parseFloat(operatorB);
+                res = res.toFixed(2);
                 break;
             case "/":
                 res = parseFloat(operatorA) / parseFloat(operatorB);
@@ -147,10 +154,10 @@ function init(){
                 break;
             case "*":
                 res = parseFloat(operatorA) * parseFloat(operatorB);
+                res = res.toFixed(2);
                 break;
         }
         result.textContent = res;
-
     }
 }
 
