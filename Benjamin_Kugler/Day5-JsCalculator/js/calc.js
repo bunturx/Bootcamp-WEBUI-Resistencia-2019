@@ -5,16 +5,6 @@
     var com = false;
 function init(){
     var result = document.getElementById("result");
-    var nine = document.getElementById("nine");
-    var eight = document.getElementById("eight");
-    var seven = document.getElementById("seven");
-    var six = document.getElementById("six");
-    var five = document.getElementById("five");
-    var four = document.getElementById("four");
-    var three = document.getElementById("three");
-    var two = document.getElementById("two");
-    var one = document.getElementById("one");
-    var cero = document.getElementById("cero");
     var clear = document.getElementById("clear");
     var changeSign = document.getElementById("changeSign");
     var percentage = document.getElementById("percentage");
@@ -24,82 +14,19 @@ function init(){
     var plus = document.getElementById("plus");
     var equal = document.getElementById("equal");
 
-    
-    function clean(){
-        if (clear == 0){
-            result.textContent = "";
-            clear = 1;
-        }
-    }
-    function isCero(){
-        if (result.textContent == "0")
-            result.textContent = "";
-    }
     /*EVENTS*/
-    nine.onclick = function(e){
-        isCero();
-        clean();
-        result.textContent = result.textContent + "9";
-    }
-    eight.onclick = function(e){
-        isCero();
-        clean();
-        result.textContent = result.textContent + "8";
-    }
-    seven.onclick = function(e){
-        isCero();
-        clean();
-        result.textContent = result.textContent + "7";
-    }
-    six.onclick = function(e){
-        isCero();
-        clean();
-        result.textContent = result.textContent + "6";
-    }
-    five.onclick = function(e){
-        isCero();
-        clean();
-        result.textContent = result.textContent + "5";
-    }
-    four.onclick = function(e){
-        isCero();
-        clean();
-        result.textContent = result.textContent + "4";
-    }
-    three.onclick = function(e){
-        isCero();
-        clean();
-        result.textContent = result.textContent + "3";
-    }
-    two.onclick = function(e){
-        isCero();
-        clean();
-        result.textContent = result.textContent + "2";
-    }
-    one.onclick = function(e){
-        isCero();
-        clean();
-        result.textContent = result.textContent + "1";
-    }
-    cero.onclick = function(e){
-        isCero();
-        clean();
-        result.textContent = result.textContent + "0";
-    }
-    coma.onclick = function(e){
-        if (com == false){
-           result.textContent = result.textContent + ".";
-           com = true;
-        }
-    }
-    clear.onclick = function(e){
-        result.textContent = "0"
-        operatorA = "";
-        operatorB = "";
-        com = false;
+    const keys = document.querySelector(".calculator");
+    if(keys){
+        keys.addEventListener("click", function(e){
+            if(e.target.matches("button") && isNaN(e.target.textContent) == false){
+                isCero();
+                clean();
+                result.textContent = result.textContent + e.target.textContent;
+            }
+        });
     }
 
-    /*OPERATIONS */
+    //OPERATIONS
     plus.onclick = function(e){
         operatorA = result.textContent;
         operation = "+";
@@ -124,18 +51,40 @@ function init(){
         clear = 0;
         com = false;
     }
+    //AUX FUNCTIONS
     percentage.onclick = function(e){
         operatorA = result.textContent;
         result.textContent = parseFloat(operatorA) / 100;
         result.textContent = result.textContent.toFixed(2);
     }
     changeSign.onclick = function(e){
-        result.textContent = parseFloat(result.textContent) * (-1)
-        
+        result.textContent = parseFloat(result.textContent) * (-1);
     }
     equal.onclick = function(e){
         operatorB = result.textContent;
         resolve(operatorA,operatorB,operation);
+    }
+    coma.onclick = function(e){
+        if (com == false){
+           result.textContent = result.textContent + ".";
+           com = true;
+        }
+    }
+    clear.onclick = function(e){
+        result.textContent = "0"
+        operatorA = "";
+        operatorB = "";
+        com = false;
+    }
+    function clean(){ //When an operation is set, the text content should return to "" 
+        if (clear == 0){
+            result.textContent = "";
+            clear = 1;
+        }
+    }
+    function isCero(){ //if the number we have in the screen is 0 and we want to type an other number, we should clean that "0"
+        if (result.textContent == "0")
+            result.textContent = "";
     }
     
 }
