@@ -1,3 +1,4 @@
+
 function resolve(a,b,c){
     let res;
     const firstNum = parseFloat(a);
@@ -18,7 +19,9 @@ function resolve(a,b,c){
             break;
     }
     result.textContent = fixResult(res);
-    
+    let newLog = a + c + b + "=" +res;
+    document.getElementById("log").textContent = document.getElementById("log").textContent + newLog;
+    document.getElementById("log").textContent = document.getElementById("log").textContent + "\r\n"
 }
 
 function fixResult(res){
