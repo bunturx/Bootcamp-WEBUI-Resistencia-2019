@@ -2,18 +2,96 @@ body{
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(253, 243, 243)
 }
 .container{
-    width: 75%;
-    margin: 0 auto;
-    padding: 0;
+    width: 90%;
+    margin: 15px auto;
     text-align: center;
+    background-color: gray;
+    border-radius: 5px;
+    border-top: 4px solid rgb(18, 168, 18);
 }
-h1{
-    font-size: 5em;
-    color:orange;
-    font-style: italic;
+header{
+    background-color: rgb(117, 219, 86);
+    margin:0;
+    width: 100%;
+    display: flex;
 }
+#content{
+    display: flex;
+    width: 100%;
+}
+.main-content{
+    width: 70%;
+}
+.aside-content{
+    width: 30%;
+    background-color: white;
+}
+
+/*CONTAINER HEADER*/
+.container-header{
+    height: 50px;
+    width: 100%;
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+p#title{
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    margin-left: 15px;
+}
+/*CONTAINER HEADER ENDS*/
+/*NAV BAR */
+.logo{
+    width: 30%;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+nav{
+    position: sticky;
+    width: 70%;
+}
+ul{
+    display: flex;
+    justify-content: left;
+    list-style: none;
+    align-items: center;
+    margin: 0 40px auto;
+    padding: 0;
+    height: 90px;
+}
+li a {
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+    font-size: 25px;
+    padding: 0 20px;
+}
+
+.link-copado::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    margin: 0;
+    padding: 0;
+    background: white;
+    transition: width .3s;
+}
+.link-copado:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+/*NAV VAR ENDS*/
 .calculator{
     background-color: #222;
     display: flex;
@@ -23,7 +101,7 @@ h1{
     width: 300px;
     border-radius: 15px;
     font-size: 2rem;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 td{
     padding: 0;

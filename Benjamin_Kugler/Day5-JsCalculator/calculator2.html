@@ -10,46 +10,98 @@
     <script src="../Day5-JsCalculator/js/calc.js"></script>
 </head>
 <body onload="init();">
-    <div class="container">
         <header>
-            <h1>GLOBANT</h1>
-            <h2>BOOTCAMP 2019</h2>
-        </header>
-        <table class="calculator">
-            <tr>
-                <td colspan="4"><span id="result">0</span></td>
-            </tr>
-            <tr>
-                <td><button id="clear" class="btn gray">C</button></td>
-                <td><button id="changeSign" class="btn gray">+/-</button></td>
-                <td><button id="percentage" class="btn gray">%</button></td>
-                <td><button id="divide" class="btn orange">/</button></td>
-            </tr>
-            <tr>
-                <td><button id="seven" class="btn dark-gray">7</button></td>
-                <td><button id="eight" class="btn dark-gray">8</button></td>
-                <td><button id="nine" class="btn dark-gray">9</button></td>
-                <td><button id="times" class="btn orange">X</button></td>
-            </tr>
-            <tr>
-                <td><button id="four" class="btn dark-gray">4</button></td>
-                <td><button id="five" class="btn dark-gray">5</button></td>
-                <td><button id="six" class="btn dark-gray">6</button></td>
-                <td><button id="minus" class="btn orange">-</button></td>
-            </tr>
-            <tr>
-                <td><button id="one" class="btn dark-gray">1</button></td>
-                <td><button id="two" class="btn dark-gray">2</button></td>
-                <td><button id="three" class="btn dark-gray">3</button></td>
-                <td><button id="plus" class="btn orange">+</button></td>
-            </tr>
-            <tr>
-                <td colspan="2"><button id="cero" class="btn-cero dark-gray">0</button></td>
-                <td><button id="coma" class="btn dark-gray">,</button></td>
-                <td><button id="equal" class="btn orange">=</button></td>
-            </tr>
-        </table>
-        <footer>Benjamin Kugler</footer>
-    </div>
+                <nav>
+                    <ul>
+                        <li><a href="" class="link-copado">Home</a></li>
+                        <li><a href="" class="link-copado">Proyects</a></li>
+                    </ul>
+                </nav>
+                <div class="logo"><img src="../Day5-JsCalculator/img/globant-logo.svg" alt=""></div>
+            </header>
+            <div class="container">
+                <div class="container-header">
+                    <p id="title">BootCamp day #</p>
+                </div>
+                <div id="content">
+                    <div class="main-content">
+                            <table class="calculator">
+                                    <tr>
+                                        <td colspan="4"><span id="result">0</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><button id="clear" class="btn gray">C</button></td>
+                                        <td><button id="changeSign" class="btn gray">+/-</button></td>
+                                        <td><button id="percentage" class="btn gray">%</button></td>
+                                        <td><button id="divide" class="btn orange">/</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><button id="seven" class="btn dark-gray">7</button></td>
+                                        <td><button id="eight" class="btn dark-gray">8</button></td>
+                                        <td><button id="nine" class="btn dark-gray">9</button></td>
+                                        <td><button id="times" class="btn orange">X</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><button id="four" class="btn dark-gray">4</button></td>
+                                        <td><button id="five" class="btn dark-gray">5</button></td>
+                                        <td><button id="six" class="btn dark-gray">6</button></td>
+                                        <td><button id="minus" class="btn orange">-</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><button id="one" class="btn dark-gray">1</button></td>
+                                        <td><button id="two" class="btn dark-gray">2</button></td>
+                                        <td><button id="three" class="btn dark-gray">3</button></td>
+                                        <td><button id="plus" class="btn orange">+</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2"><button id="cero" class="btn-cero dark-gray">0</button></td>
+                                        <td><button id="coma" class="btn dark-gray">,</button></td>
+                                        <td><button id="equal" class="btn orange">=</button></td>
+                                    </tr>
+                                </table>
+                    </div>
+                    <aside class="aside-content">
+                        <p>ASIDE</p>
+                    </aside>
+                </div>
+                <footer>Benjamin kugler</footer>
+            </div>
 </body>
 </html>
+
+<!--
+    <table class="calculator">
+                        <tr>
+                            <td colspan="4"><span id="result">0</span></td>
+                        </tr>
+                        <tr>
+                            <td><button id="clear" class="btn gray">C</button></td>
+                            <td><button id="changeSign" class="btn gray">+/-</button></td>
+                            <td><button id="percentage" class="btn gray">%</button></td>
+                            <td><button id="divide" class="btn orange">/</button></td>
+                        </tr>
+                        <tr>
+                            <td><button id="seven" class="btn dark-gray">7</button></td>
+                            <td><button id="eight" class="btn dark-gray">8</button></td>
+                            <td><button id="nine" class="btn dark-gray">9</button></td>
+                            <td><button id="times" class="btn orange">X</button></td>
+                        </tr>
+                        <tr>
+                            <td><button id="four" class="btn dark-gray">4</button></td>
+                            <td><button id="five" class="btn dark-gray">5</button></td>
+                            <td><button id="six" class="btn dark-gray">6</button></td>
+                            <td><button id="minus" class="btn orange">-</button></td>
+                        </tr>
+                        <tr>
+                            <td><button id="one" class="btn dark-gray">1</button></td>
+                            <td><button id="two" class="btn dark-gray">2</button></td>
+                            <td><button id="three" class="btn dark-gray">3</button></td>
+                            <td><button id="plus" class="btn orange">+</button></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button id="cero" class="btn-cero dark-gray">0</button></td>
+                            <td><button id="coma" class="btn dark-gray">,</button></td>
+                            <td><button id="equal" class="btn orange">=</button></td>
+                        </tr>
+                    </table>
+-->
