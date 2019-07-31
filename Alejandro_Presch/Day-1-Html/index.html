@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">    
+    
+    <title>Encuesta servicio Gigared</title>
+  </head>
+  
+  <body id="body">
+    <header>
+
+        <h1 id="title" align = "center"> Servicio de Internet Gigared</h1>
+
+        <div>
+            <h2 id="titleh2">Encuesta de satisfacción del servicio</h2><br>
+            <h3 id="titleh3">Ingrese los siguientes datos:</h3>
+        </div>
+    </header>   
+  
+    <div>
+      <section>
+        <form>
+              
+          <label for="nombre"> Nombre: </label>
+          <input type="text" name="primernombre" required aria-label="ingrese su nombre"><br><br>
+              
+          <label for="apellido"> Apellido: </label>
+          <input type="text" name="apellido" required aria-label="ingrese su apellido"><br><br>
+              
+          <label for="dni"> D.N.I: </label>
+          <input type="number" name="dni" required aria-label="ingrese su dni"><br><br>
+
+          <label aria-labelledby="" aria-describedby="">Seleccione su género: </label> <br>
+
+          <!-- mismo name para seleccionar una sola opcion //el screen reader saltea la opcion con el mismo name 
+               no usar tab, usar flechas de navegacion -->
+          
+          <label for="radiohombre">Hombre: </label>
+          <input type="radio" id="radiohombre" name = "radiovalue" value="hombre" aria-label="hombre">
+          
+          <label for="radiomujer">Mujer</label>
+          <input type="radio" id="radiomujer" name = "radiovalue" value="mujer" aria-label="mujer"> 
+          <br><br>
+
+          <label for="megas"> Seleccione su velocidad: </label>
+          
+          <!-- dropdown lista desplegable -->
+          <select name="Velocidad">
+            <option value="1">25</option>
+            <option value="2">50</option>
+            <option value="3">100</option>
+            <option value="4">300</option>
+          </select>
+          <br><br>
+
+          <label for="problemas"> Dispone alguno de los siguientes problemas: </label>
+          <br><br>
+          
+          <input type="checkbox" name="servicio" value="caida" aria-label="caída del servicio"/>
+          <label for="caidaservicio">Caída del servicio</label><br />
+                    
+          <input type="checkbox" name="servicio" value="baja" aria-label="baja velocidad"/>
+          <label for="bajavelocidad">Baja velocidad</label><br />
+                    
+				  <input type="checkbox" name="servicio" value="latencia" aria-label="latencia"/>
+          <label for="latencia">Latencia</label><br />
+        
+          <br>
+          <textarea name="opinion" cols="20" rows="5">Otros</textarea>
+
+          <div id="botones-form"> <!-- botones aceptar y cancelar -->
+            <br>
+            <input type="submit" name="aceptar" value="Aceptar">
+            <input type="button" name="Cancelar" value="Cancelar">
+          </div>
+        
+        </form>
+      </section>
+    </div>
+    
+  </body>
+
+</html>

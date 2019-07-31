@@ -1,0 +1,92 @@
+.nigerian-image {	
+	background-image: url("nigerian.jpg")
+	background-position: center;
+	height: 736px;
+	background-repeat: no-repeat;
+}
+
+h1 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 900;
+	font-size: 80px;
+	color: #000000;
+	text-align: center;
+	margin-top: 30px;	
+}
+
+h2 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	font-size: 60px;
+	color: #000000;
+	text-align: center;
+	margin-top: 60px;	
+}
+
+h3 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	font-size: 40px;
+	color: #000000;
+	text-align: right;
+}
+
+
+h4 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	font-size: 30px;
+	color: #000000;
+	text-align: center;
+	margin-top: 50px;	
+}
+
+h5 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 200;
+	font-size: 15px;
+	color: #000000;
+	margin-top: 15px;	
+}
+
+p {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 200;
+	font-size: 20px;
+	color: #000000;
+}
+
+#magazine-title {	
+	padding: 10px;
+}
+
+
+#date {
+	background-color: blue;
+	margin-left: 15px;
+	padding: 10px 15px 10px;
+	text-align: left;
+}
+
+#website {
+	background-color: blue;
+	margin-right: 15px;
+	padding: 10px 15px 10px;
+	text-align: right;
+}
+
+#left-article {
+	margin-left: 15px;
+	text-align: left;
+}
+
+#right-column-article {
+	margin-right: 15px;
+	text-align: right;
+}
+
+#footer {
+	background-color: blue;
+	padding: 10px 15px 10px;
+	text-align: center;
+}

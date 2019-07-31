@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="css-magazine.css">
+	<title>Vibe Magazine</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<h5 id="date" class="navbar"> December 2016 </h5>
+			<h5 id="website" class="navbar">www.vibe.ng</h5>
+		</nav>
+		<h1 id="magazine-name" class="magazine-name">vibe.ng</h1>
+	</header>
+	<section>
+		<article id="magazine-title">
+			<h4>The rise & rise of</h4>
+			<h2>YCEE</h2>
+		</article>	
+	</section>
+	<section>
+		<p id="left-article">6 Reasons why girls are crazy<br>about runtown's mad over you</p>
+	</section>
+	<section>
+		<aside>
+			<h3>3 NIGERIAN FASHION DESIGNERS</h3><br>
+			<p id="right-column-article">To lookout for in 2017</p><br>
+			<h3>TOP 10 NIGERIA</h3><br>
+			<p id="right-column-article">Music videos of 2016</p><br>
+			<h3>NEHRI OKWA</h3><br>
+			<p id="right-column-article">Young CEOs making it</p>	<br>
+		</aside>
+	</section>
+</body>	
+	<footer>
+		<p id="footer">APPLE MUSICLOCAL PRICING: A GOLDMINE FOR THE NIGERIAN MUSIC INDUSTRY</p>
+	</footer>
+</html>	

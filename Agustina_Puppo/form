@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<title>Form</title>
+</head>
+<body>
+	<form action="form.html" id="form" aria-label="Buscador de canchas">
+		<fieldset>
+			<legend>Búsqueda de Canchas</legend>
+			
+			<label for="city">Seleccioná tu ubicación</label><br>
+				<input type="text" name="localization"><br>
+  			
+  			<label for="sport">Seleccioná tu deporte</label><br>
+				<input type="radio" name="sport" value="football" checked> Fútbol<br>
+				<input type="radio" name="sport" value="tennis"> Tenis<br>
+  				<input type="radio" name="sport" value="basketball"> Basquet <br>
+
+  			<label for="date">Fecha</label><br>
+  				<input type="date" name="date" min="2019-07-27"><br>
+  			
+  			<label for="time">Horario</label><br>
+  				<input type="time" name="usr_time"><br>
+  			
+  			<label for="email">E-mail</label><br>
+  				<input type="email" name="email"><br>
+
+  			<label for="phone">Móvil</label><br>
+  				<input type="text" name="phone"><br>
+
+ 				<input type="submit" value="Submit">
+		</fieldset>
+		
+	</form>
+</body>	
+
+</html>	
