@@ -6,6 +6,12 @@ let planetInfo = document.getElementById('planet-info')
 let starshipInfo = document.getElementById('starship-info')
 let vehicleInfo = document.getElementById('vehicle-info')
 let specieInfo = document.getElementById('specie-info')
+let cCount = document.getElementById('cCount')
+let pCount = document.getElementById('pCount')
+let sCount = document.getElementById('sCount')
+let vCount = document.getElementById('vCount')
+let spCount = document.getElementById('spCount')
+
 var data
 
 fetch(`https://swapi.co/api/films/`)
@@ -37,7 +43,7 @@ async function obtainFilmsDataFromSelection(){
         planets = data.results[index].planets
         vehicles = data.results[index].vehicles
         starships = data.results[index].starships
-        species = data.results[index].starships
+        species = data.results[index].species
         /* Erase data in HTML to replace with newone fetched */
         charactersInfo.innerHTML = null
         planetInfo.innerHTML  = null
@@ -124,28 +130,33 @@ let countActualPage = 0
 it don't mess de previous data with a undefined result */
 function displayNextData(){
     countActualPage++
-    if(countActualPage > starships.length){} 
+    if(countActualPage >= characters.length){}
     else{
-        starshipInfo.innerHTML = null
-        displayStarshipInfo(starships[countActualPage])
-    }
-    if(countActualPage > planets.length){}
-    else{
-        planetInfo.innerHTML  = null
-        displayPlanetInfo(planets[countActualPage])
-    }
-    if(countActualPage > characters.length){}
-    else{
+        cCount.innerHTML = countActualPage+1
         charactersInfo.innerHTML = null
         displayCharactersInfo(characters[countActualPage])
     }
-    if(countActualPage > vehicles.length){}
+    if(countActualPage >= planets.length){}
     else{
+        pCount.innerHTML = countActualPage+1
+        planetInfo.innerHTML  = null
+        displayPlanetInfo(planets[countActualPage])
+    }
+    if(countActualPage >= starships.length){} 
+    else{
+        starshipInfo.innerHTML = null
+        sCount.innerHTML = countActualPage+1
+        displayStarshipInfo(starships[countActualPage])
+    }
+    if(countActualPage >= vehicles.length){}
+    else{
+        vCount.innerHTML = countActualPage+1
         vehicleInfo.innerHTML = null
         displayVehiclesInfo(vehicles[countActualPage])
     }
-    if(countActualPage > species.length){}
+    if(countActualPage >= species.length){}
     else{
+        spCount.innerHTML = countActualPage+1
         specieInfo.innerHTML  = null
         displaySpecieInfo(species[countActualPage])
     }

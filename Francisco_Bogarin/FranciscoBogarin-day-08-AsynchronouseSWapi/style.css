@@ -2,10 +2,10 @@ body{
     color: darkblue
 }
 .display-data{
-    width: 100%;
     display: flex;
     flex-direction: row;
     margin-left: 115px;
+    overflow-wrap: break-word;
 }
 .labelContainer{
     display: flex;
@@ -18,7 +18,7 @@ body{
     justify-content: start;
 }
 .labelContainer label{
-    width: 265px;
+    width: 243px;
     justify-content: start;
 }
 .justified{
@@ -27,7 +27,6 @@ body{
     flex-wrap: nowrap;
     font-size: 18px;
     font-family: sans-serif;
-    justify-content: start;
     margin-left: 115px;
 }
 
@@ -35,13 +34,12 @@ main section {
     font-family: sans-serif;
     font-weight: 500;
     overflow-wrap: break-word;
-    width: 266px;
+    width: 243px;
 }
 
 main p{
     display: flex;
-    justify-content: start;
-    margin-left: 50px;
+    margin-left: 115px;
     font-family: sans-serif;
     font-size: 18px;
 }
@@ -55,6 +53,7 @@ main p{
     margin-left: 370px;
 }
 nav {
+    margin-top: 50px;
     display: flex;
     text-align: center;
     flex-wrap: wrap;
@@ -68,4 +67,7 @@ nav button{
     color: darkblue;
     background: none;
     margin-left: 115px
+}
+label span{
+    margin-left: 10px;
 }
