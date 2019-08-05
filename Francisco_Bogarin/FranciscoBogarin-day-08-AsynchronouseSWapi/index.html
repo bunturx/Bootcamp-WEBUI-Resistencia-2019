@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>SW API FOR GLOBANT</title>
+</head>
+<body>
+    <nav>
+        <select id="selectMenu" onchange="obtainFilmsDataFromSelection()">
+            <option>SELECT YOUR FILM</option>
+        </select>
+        <button onclick="displayNextData()">SHOW ME MORE</button>
+    </nav>
+    <main>
+        
+        <p>Film Title:  <span id="film-title"></span></p>
+        <div class="labelContainer">
+                <div class="justified">
+                <label for="characters">Character</label>
+                <label for="planets">Planet </label>
+                <label for="starships">Starship</label>
+                <label for="vehicles">Vehicle</label>
+                <label for="species">Specie</label>
+                </div>
+        </div>
+        <article class="display-data">
+                <section id="characters-info"></section>
+                <section id="planet-info"></section>
+                <section id="starship-info"></section>
+                <section id="vehicle-info"></section>
+                <section id="specie-info"></section>
+        </article>
+
+    </main>
+    <footer></footer>
+</body>
+</html>
