@@ -73,6 +73,7 @@ html,body
 					border: 3px solid var(--border-color);
 					border-radius: 10px 0px 0px 10px;
 					background: var(--secondary-color);
+					overflow: hidden;
 				}
 			#title
 					{
@@ -98,6 +99,7 @@ html,body
 					#productionInfo > *
 							{
 								font-size: 3vmin;
+								width: 33%;
 							}
 				#characters
 						{
@@ -116,7 +118,7 @@ html,body
 					.chararactersItem
 							{
 								position: relative;
-								width: 30%;
+								width: 25%;
 								height: 25%;
 								left: 5%;
 							}
