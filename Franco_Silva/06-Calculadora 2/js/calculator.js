@@ -12,8 +12,8 @@ const todasLasOperaciones = {
 
 let calculadora = function () {
     console.log("Calculadora cargada");
-    let valorActual = 0;
-    let resultado = 0;
+    let valorActual = "";
+    let resultado = "";
     let operacionEjecutar = '';
     const calculadora = document.querySelector ('.calculadora');
    
@@ -43,7 +43,7 @@ let calculadora = function () {
 
         let operacion = todasLasOperaciones[operacionEjecutar];
 
-        resultado = operacion(resultado, valorActual);
+        resultado=operacion(resultado, valorActual);
 
         visor.innerHTML = resultado;
 
