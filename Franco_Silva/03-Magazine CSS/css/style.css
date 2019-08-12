@@ -1,0 +1,8 @@
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:aquamarine;
+}
+body {
+    background-image: url("img/fondo.jpg");
+    background-repeat: no-repeat;
+} 
