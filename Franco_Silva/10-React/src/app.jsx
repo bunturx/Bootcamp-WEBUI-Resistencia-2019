@@ -1,8 +1,8 @@
 import React from 'react';
-import ReactDom from 'react-dom';
+import ReactDOM from 'react-dom';
+import TextField from './components/TextField/TextField.jsx';
 
-
-ReactDom.redner {
-    <div>Hola Mundo</div>,
-    document.getElementById("main");
-}
+ReactDOM.render(
+    <div> Hola Mundo <TextField name="txtName" /> </div>,
+    document.getElementById("main")
+);
