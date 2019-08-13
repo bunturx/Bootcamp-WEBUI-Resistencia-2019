@@ -15,7 +15,10 @@ let app =  async function(){
 
     //Now we create an event listener for each option.
     filmSelect.addEventListener('click',async function(e){
-        
+        //Si ya hice click sobre la misma no volver a mostrarla
+        //Buscar como puedo parar la request.
+        //axios cancel token o fetch tambien
+        //Agregar un loading a la pantalla cuando esta buscando los datos
         resetScreen();
         let filmSelected = filmsInfo[e.target.selectedOptions[0].id];
         document.querySelector(".title").textContent = filmSelected.title
