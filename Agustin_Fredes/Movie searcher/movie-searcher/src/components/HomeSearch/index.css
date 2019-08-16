@@ -1,0 +1,6 @@
+.main
+        {
+            min-height: 86%;
+            display: flex;
+            flex-direction: column;
+        }

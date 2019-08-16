@@ -1,0 +1,32 @@
+.tagOption
+        {
+            display: flex;
+            flex-direction: column;
+            font-size: 3vmin;
+            width: 15vmin;
+            height: auto;
+            margin: 10px;
+        }
+    .tagOptionText
+            {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                user-select: none;
+            }
+        .tagOptionText:hover
+                {
+                    color: rgb(59, 59, 59)
+                }
+        .tagOptionRadio
+                {
+                    opacity: 0;
+                }
+        .tagOptionRadio:checked + *
+                {
+                    color: rgb(126, 0, 0)
+                }
+        .tagOptionRadio:checked + *:hover
+                {
+                    color: rgb(187, 0, 0)
+                }

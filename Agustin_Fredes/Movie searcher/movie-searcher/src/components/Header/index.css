@@ -1,0 +1,19 @@
+.header
+        {
+            background: rgb(29, 29, 29);
+            height: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+    .headerImage
+            {
+                height: 80%;
+                width: auto
+            }
+    .headerTitle
+            {
+                font-family: monospace;
+                font-size: 4vmin
+            }
