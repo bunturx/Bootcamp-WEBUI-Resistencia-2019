@@ -9,7 +9,9 @@ function App() {
   return (
     <Router>
       <Header>Movies Searcher</Header>
+      <div style={{height: "86%", width: "100%"}}>
         <Route exact path="/" component={HomeSearch}></Route>
+      </div>
         <Footer></Footer>
     </Router>
   );

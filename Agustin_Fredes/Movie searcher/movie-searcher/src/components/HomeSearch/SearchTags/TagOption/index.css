@@ -16,7 +16,7 @@
             }
         .tagOptionText:hover
                 {
-                    color: rgb(59, 59, 59)
+                    color: rgb(60, 60, 60)
                 }
         .tagOptionRadio
                 {
@@ -24,9 +24,9 @@
                 }
         .tagOptionRadio:checked + *
                 {
-                    color: rgb(126, 0, 0)
+                    color: rgb(0, 100, 0)
                 }
         .tagOptionRadio:checked + *:hover
                 {
-                    color: rgb(187, 0, 0)
+                    color: rgb(0, 130, 0)
                 }

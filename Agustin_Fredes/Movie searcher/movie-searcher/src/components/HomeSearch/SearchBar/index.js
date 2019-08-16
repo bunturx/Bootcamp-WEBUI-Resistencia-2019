@@ -14,7 +14,7 @@ class SearchBar extends React.PureComponent {
         this.setState({ input : e.target.value })
     }
     handleClick(){
-        this.props.buttonAction(this.state.input)
+        this.props.buttonAction(this.state.input);
     }
     render(){
         return(
