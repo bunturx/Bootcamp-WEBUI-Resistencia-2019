@@ -17,3 +17,9 @@ body{
 #error{
 	color: red;
 }
+.yellow{
+	color: yellow;
+}
+.box{
+	border: solid 1px yellow;
+}
