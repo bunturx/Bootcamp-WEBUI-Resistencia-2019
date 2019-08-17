@@ -1,4 +1,3 @@
-import header from './Home.jsx';
+import Header from './Header.jsx';
 
-
-export default Header; 
+export default Header;

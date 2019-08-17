@@ -1,5 +1,3 @@
-import Homer from './Home.jsx';
+import Home from './Home.jsx';
 
-
-export default Home; 
-export default Contact;
+export default Home;

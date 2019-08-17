@@ -1,5 +1,5 @@
 const path = require('path');
-const combineLoaders= require ('webpack-combine-loaders');
+const combineLoaders = require('webpack-combine-loaders');
 module.exports = {
     entry: '',
     module: {
@@ -11,10 +11,10 @@ module.exports = {
                 presets: ['@babel/preset-env', '@babel/preset-react']
             }
         },{
-            test:/\.css?$/,
+            test: /\.css?$/,
             loader: combineLoaders([{
-                loader: 'styke-loader'
-            },{
+                loader: 'style-loader'
+            }, {
                 loader: 'css-loader'
             }])
         }]

@@ -1,17 +1,18 @@
 import React from 'react';
-
-const nav = () => (
+import {Link} from 'react-router-dom';
+const Nav = () => (
     <nav>
         <ul>
             <li>
-                option 1
+                <Link to="/">Home</Link>
             </li>
             <li>
-                Option 2
-
+                <Link to="/contact/">Contact</Link>
             </li>
-            <li>Option 3</li>
+            <li>
+                Option 3
+            </li>
         </ul>
     </nav>
-    )
-export default nav;
+);
+export default Nav;

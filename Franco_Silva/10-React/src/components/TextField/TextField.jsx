@@ -1,15 +1,13 @@
 import React from 'react';
-import Proptypes from 'prop-types';
+import PropTypes from 'prop-types'
 
-const TextField = ({name, onClick}) =>(
-    <div>
-        <label htmlFor={id}>{label}:</label>
-        <input id={id} name={name} onClick={onClick} type="text"/>
+const TextField = ({id, label, name, className, onChange}) =>(
+    <div className={className}>
+        <label htmlFor={id}>{label}</label>
+        <input id={id} name={name} onChange={onChange} type="text"/>
     </div>
-    );
-
-TextField.Proptypes ={
-    name: Proptypes.string.isRequired
+);
+TextField.propTypes = {
+    name: PropTypes.string.isRequired
 }
-
 export default TextField;

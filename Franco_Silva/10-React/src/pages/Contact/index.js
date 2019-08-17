@@ -1,4 +1,3 @@
-import contact from './contact.jsx';
+import Contact from './Contact.jsx';
 
-
-export default contact; 
+export default Contact;

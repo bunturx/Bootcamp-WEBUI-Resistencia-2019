@@ -1,4 +1,3 @@
-import nav from './Home.jsx.js';
+import Nav from './Nav.jsx';
 
-
-export default nav; 
+export default Nav;
