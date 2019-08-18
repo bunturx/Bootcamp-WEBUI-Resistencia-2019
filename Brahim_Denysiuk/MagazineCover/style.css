@@ -129,3 +129,8 @@ article{
 	font-size: 15px;
 
 }
+.border-botton-black{
+	border-bottom: solid 6px black;
+	width: 170px;
+	float: right;
+}
