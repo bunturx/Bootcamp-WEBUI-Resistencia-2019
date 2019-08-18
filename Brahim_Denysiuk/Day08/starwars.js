@@ -16,8 +16,6 @@ var swapi = `https://swapi.co/api/`;
 var error_msg_intro = "Error, Try Later. "
 var error_msg = "Error, Try Later."
 
-
-
 async function fetch_some_json(request){
 	let data_return;
 	data_return = await fetch(request)
@@ -40,9 +38,7 @@ async function fetch_movie_list(){
 	return data.results;
 }
 
-
 function display_error(error){
-
 	errorbox = document.getElementById("error");
 	errorbox.textContent=error_msg_intro + error;
 }
@@ -62,12 +58,7 @@ async function load_movie_list(){
 		loading.classList.add("hidden");
 		selectmoviebox.classList.remove("hidden");
 	}
-
 }
-
-
-
-
 
 async function search_film(){
 	/*revisar value select*/
@@ -84,11 +75,9 @@ async function search_film(){
 	movie = await fetch_some_json(value);
 	/*cargar/mostrar datos resultado*/
 	show_results(movie);
-
 	loading.classList.add("hidden");
 	databox.classList.remove("hidden");	
 }
-
 
 /*Data box info*/
 function show_results(movie){
@@ -103,7 +92,6 @@ function show_results(movie){
 	render_vehicle_box(movie.vehicles, vehicle_index);
 	specie_index = 0;
 	render_specie_box(movie.species, specie_index);
-
 }
 
 /*Movie Info*/
@@ -116,7 +104,6 @@ function show_results_movie_data(movie){
 	title_h2.textContent = "Movie: "+ movie.title;
 	movieboxdata.appendChild(title_h2);
 }
-
 
 /*Character Info-box*/
 async function render_character_box(character_list,index){
@@ -171,9 +158,6 @@ function render_more_info_character(){
 	render_character_box(movie.characters, character_index);
 }
 
-
-
-
 /*planet info-box*/
 async function render_planet_box(planet_list,index){
 	let planetboxdata = document.getElementById("planet-box-data");
@@ -226,9 +210,8 @@ function render_more_info_planet(){
 	}
 	render_planet_box(movie.planets, planet_index);
 }
-/*-----------*/
 
-/*starship*/
+/*starship info-box*/
 async function render_starship_box(starship_list,index){
 	let starshipboxdata = document.getElementById("starship-box-data");
 	while(starshipboxdata.firstChild){
@@ -283,9 +266,9 @@ function render_starship_data(starship, node_html){
 	node_html.appendChild(text_MGLT);
 	text_starship_class.textContent = "Class: " + starship.starship_class;
 	node_html.appendChild(text_starship_class);
-
 }
 
+/*planet data  in planet-box*/
 function render_more_info_starship(){
 	if(starship_index<movie.starships.length-1){
 		starship_index++;
@@ -296,11 +279,7 @@ function render_more_info_starship(){
 	render_starship_box(movie.starships, starship_index);
 }
 
-
-
-
-
-/*vehivle*/
+/*vehicle info-box*/
 async function render_vehicle_box(vehicle_list,index){
 	let vehicleboxdata = document.getElementById("vehicle-box-data");
 	while(vehicleboxdata.firstChild){
@@ -312,11 +291,9 @@ async function render_vehicle_box(vehicle_list,index){
 	url_vehicle = vehicle_list[index];
 	let vehicle_item = await fetch_some_json(url_vehicle);
 	render_vehicle_data(vehicle_item,vehicleboxdata);
-
 }
 
-
-
+/*vehicle data in box*/
 function render_vehicle_data(vehicle, node_html){
 	let text_name = document.createElement("h3");
 	let text_model = document.createElement("p");
@@ -354,6 +331,7 @@ function render_vehicle_data(vehicle, node_html){
 	node_html.appendChild(text_vehicle_class);
 }
 
+/*next vehicle*/
 function render_more_info_vehicle(){
 	if(vehicle_index<movie.vehicles.length-1){
 		vehicle_index++;
@@ -364,16 +342,7 @@ function render_more_info_vehicle(){
 	render_vehicle_box(movie.vehicles, vehicle_index);
 }
 
-
-
-
-
-
-
-
-
-
-/*specie*/
+/*specie info-box*/
 async function render_specie_box(specie_list,index){
 	let specieboxdata = document.getElementById("specie-box-data");
 	while(specieboxdata.firstChild){
@@ -387,6 +356,7 @@ async function render_specie_box(specie_list,index){
 	render_specie_data(specie_item,specieboxdata);	
 }
 
+/*specie data*/
 function render_specie_data(specie, node_html){
 	let text_name = document.createElement("h3");
 	let text_classification = document.createElement("p");
@@ -416,7 +386,7 @@ function render_specie_data(specie, node_html){
 	text_language.textContent = "Language: " + specie.language;
 	node_html.appendChild(text_language);
 }
-
+/*next specie*/
 function render_more_info_specie(){
 	if(specie_index<movie.species.length-1){
 		specie_index++;
@@ -427,14 +397,7 @@ function render_more_info_specie(){
 	render_specie_box(movie.species, specie_index);
 }
 
-
-
-
-
-
-
-
+/*windows load*/
 window.onload = function(){
-
 	load_movie_list();
 }
