@@ -1,19 +1,31 @@
-.header
-        {
-            background: rgb(29, 29, 29);
-            height: 10%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-        }
-    .headerImage
-            {
-                height: 80%;
-                width: auto
-            }
-    .headerTitle
-            {
-                font-family: monospace;
-                font-size: 4vmin
-            }
+.header {
+  background: rgb(29, 29, 29);
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerLink,
+.headerLink:link {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.headerImage {
+  height: 80%;
+  width: auto;
+}
+.headerTitle,
+.headerTitle:visited {
+  font-family: monospace;
+  font-size: 4vmin;
+  color: white;
+}
+.headerTitle:active {
+  transform: scale(0.95);
+}
+.headerLink:focus {
+  outline: none;
+}

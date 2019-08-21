@@ -7,7 +7,13 @@ import Results from "./Results";
 class HomeSearch extends React.PureComponent {
   constructor(props) {
     super(props);
-    this.state = { checked: 0, pages: 0, searchList: [] };
+    this.state = {
+      checked: 0,
+      pages: 0,
+      searchList: [],
+      Tags: { 0: "movie", 1: "series", 2: "episode"},
+      Error: ""
+    };
     this.search = this.search.bind(this);
     this.selectTag = this.selectTag.bind(this);
   }
@@ -30,22 +36,29 @@ class HomeSearch extends React.PureComponent {
   }
 
   search(text) {
+    this.setState({ Error: "" });
+    this.setState({ searchList: [] });
     this.fetchToJson(
-      `http://www.omdbapi.com/?type=movie&s=${text}t&i=tt3896198&apikey=5242b7c7`
+      `http://www.omdbapi.com/?type=${
+        this.state.Tags[this.state.checked]
+      }&s=${text}t&plot=short&apikey=5242b7c7`
     ).then(data => {
       if (data.Error === undefined) {
         this.pages = Math.round(data.totalResults / 10);
         for (let i = this.pages; i > 0; i--) {
           this.fetchToJson(
-            `http://www.omdbapi.com/?page=${i}&type=movie&s=${text}t&i=tt3896198&apikey=5242b7c7`
+            `http://www.omdbapi.com/?page=${i}&plot=full&type=${
+              this.state.Tags[this.state.checked]
+            }&s=${text}t&apikey=5242b7c7`
           )
             .then(item => item.Search)
             .then(data => {
               this.concatPages(data);
-            });
+            })
+            .catch(err => console.error);
         }
       } else {
-        console.log(data.Error);
+        this.setState({ Error: data.Error });
       }
     });
   }
@@ -56,7 +69,11 @@ class HomeSearch extends React.PureComponent {
         <SearchBar buttonAction={this.search} />
         <SearchTags tagSelector={this.selectTag} />
         <hr />
-        <Results List={this.state.searchList}/>
+        {(this.state.Error && (
+          <h1 style={{ margin: "40px", textAlign: "center" }}>
+            {this.state.Error}
+          </h1>
+        )) || <Results List={this.state.searchList} />}
       </main>
     );
   }

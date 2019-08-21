@@ -8,9 +8,8 @@ class SearchTags extends React.PureComponent {
     this.state = {
       options: [
         { name: "Movie" },
-        { name: "TVshow" },
-        { name: "Category" },
-        { name: "Date" }
+        { name: "Series" },
+        { name: "Episodes" },
       ]
     };
     this.checkUnCheck = this.checkUnCheck.bind(this);

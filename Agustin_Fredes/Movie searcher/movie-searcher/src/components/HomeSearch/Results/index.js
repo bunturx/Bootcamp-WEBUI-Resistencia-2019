@@ -3,11 +3,14 @@ import "./index.css";
 import ResultItem from "./ResultItem";
 
 const Results = props => {
-    const List = props.List.map((item,index) => <ResultItem>{item.title}</ResultItem>)
-  return <ul className="resultList">
-      {List}
-  </ul>;
+    var List = props.List.map((item, index) => (
+      <ResultItem key={index} ImageURL={item.imdbID} Image={item.Poster}>
+        {item.Title}
+      </ResultItem>
+    ))
+  ;
+  return <ul className="resultList">{List}</ul>;
 };
-Results.defaultProps = { results : [] }
+Results.defaultProps = { results: [] };
 
 export default Results;
