@@ -26,7 +26,7 @@ function Page(props) {
             <div className="results-page">
                 {isEmpty ?
                     <Typography variant="h5" component="h3" className="page-message">
-                        There are no results
+                        No se pudo encontrar resultados
                     </Typography>
                     :
                     results.map(item =>
