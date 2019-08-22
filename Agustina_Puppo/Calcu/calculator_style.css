@@ -1,0 +1,97 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: white;
+}
+
+#container {
+	width: 500px;
+	height: 736px;
+	background-color: #ADA3A5;
+}
+
+#calculator {
+	width: 320px;
+	height: 520px;
+	background-color: #F2E0DC;
+	margin: 0 auto;
+	position: relative;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#result	{
+	height: 120px;
+}
+
+#history {
+	text-align: right;
+	height: 20px;
+	margin: 0 15px;
+	padding-top: 10px;
+	font-size: 20px;
+}
+
+#output {
+	text-align: right;
+	height: 60px;
+	margin: 25px 15px;
+	font-size: 45px;
+	font-weight: bold;
+}
+
+#keyboard {
+	height: 400px;
+}
+
+.operator {
+	width: 50px;
+	height: 50px;
+	margin: 15px;
+	float: left;
+	border-radius: 50%;
+	border-width: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+	background-color: #F5CEC7;
+}
+
+.empty {
+	width: 50px;
+	height: 50px;
+	margin: 15px;
+	float: left;
+	border-radius: 50%;
+	border-width: 0;
+	background-color: #F2E0DC;
+}
+
+.number {
+	width: 50px;
+	height: 50px;
+	margin: 15px;
+	float: left;
+	border-radius: 50%;
+	border-width: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+	background-color: #F5CEC7;
+}
+
+.number, .operator {
+	cursor: pointer;
+}
+
+.number:active, .operator:active {
+	font-size: 13px;	
+}
+
+.operator:focus, .number:focus, .empty:focus {
+	outline: 0;
+}
+
+button:nth-child(4n+0){
+	font-size: 20px;
+	background-color: #E0978D;
+}
