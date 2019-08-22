@@ -9,7 +9,7 @@ function reducer(state = defaultState, { type, payload }) {
             if (!payload) {
                 return null;
             }
-
+            
             return items.find(n => n.id === payload);
         }
 

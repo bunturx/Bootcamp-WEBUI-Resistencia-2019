@@ -1,5 +1,5 @@
-const infoApiOMDB = async () => {
-    return await fetch('http://img.omdbapi.com/?apikey=[4cca8b5d]&')
+const elementOMDB = async () => {
+    return await fetch('http://www.omdbapi.com/?i=tt3896198&apikey=4cca8b5d')
     .then( res => res.json() )
     .then( query => {
         console.log(query);  
@@ -12,4 +12,4 @@ const infoApiOMDB = async () => {
     .catch(err=> console.log(err))
 }
 
-export default infoApiOMDB;
+export default elementOMDB;
