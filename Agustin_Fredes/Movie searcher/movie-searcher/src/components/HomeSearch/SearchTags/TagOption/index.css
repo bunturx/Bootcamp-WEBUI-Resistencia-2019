@@ -1,32 +1,26 @@
-.tagOption
-        {
-            display: flex;
-            flex-direction: column;
-            font-size: 3vmin;
-            width: 15vmin;
-            height: auto;
-            margin: 10px;
-        }
-    .tagOptionText
-            {
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-                user-select: none;
-            }
-        .tagOptionText:hover
-                {
-                    color: rgb(60, 60, 60)
-                }
-        .tagOptionRadio
-                {
-                    opacity: 0;
-                }
-        .tagOptionRadio:checked + *
-                {
-                    color: rgb(0, 100, 0)
-                }
-        .tagOptionRadio:checked + *:hover
-                {
-                    color: rgb(0, 130, 0)
-                }
+.tagOption {
+  display: flex;
+  flex-direction: column;
+  font-size: 3vmin;
+  width: 15vmin;
+  height: auto;
+  margin: 10px;
+}
+.tagOptionText {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  user-select: none;
+}
+.tagOptionText:hover {
+  color: rgb(60, 60, 60);
+}
+.tagOptionRadio {
+  opacity: 0;
+}
+.tagOptionRadio:checked + * {
+  color: rgb(0, 100, 0);
+}
+.tagOptionRadio:checked + *:hover {
+  color: rgb(0, 130, 0);
+}

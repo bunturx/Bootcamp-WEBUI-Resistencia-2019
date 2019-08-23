@@ -11,7 +11,7 @@ class HomeSearch extends React.PureComponent {
       checked: 0,
       pages: 0,
       searchList: [],
-      Tags: { 0: "movie", 1: "series", 2: "episode"},
+      Tags: { 0: "movie", 1: "series", 2: "episode" },
       Error: ""
     };
     this.search = this.search.bind(this);
@@ -31,7 +31,6 @@ class HomeSearch extends React.PureComponent {
   }
 
   concatPages(arg) {
-    console.log(arg);
     this.setState({ searchList: this.state.searchList.concat(arg) });
   }
 
@@ -55,7 +54,7 @@ class HomeSearch extends React.PureComponent {
             .then(data => {
               this.concatPages(data);
             })
-            .catch(err => console.error);
+            .catch(err => console.error(err));
         }
       } else {
         this.setState({ Error: data.Error });

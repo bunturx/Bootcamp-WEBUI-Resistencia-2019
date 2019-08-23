@@ -10,7 +10,7 @@
   transform: scale(0.95);
 }
 
-.resultItemLink:focus{
+.resultItemLink:focus {
   outline: none;
 }
 
@@ -43,6 +43,6 @@
   transition: 150ms;
   border-radius: 20px;
 }
-.resultItemTitle{
-  font-size: 2vmax
+.resultItemTitle {
+  font-size: 2vmax;
 }
