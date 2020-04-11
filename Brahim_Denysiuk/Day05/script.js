@@ -4,7 +4,6 @@ var operacion;
 var finalizado;
 
 function init(){
-	//alert("prueba")
 	var resultado = document.getElementById("resultado");
 	var uno = document.getElementById("uno");
 	var dos = document.getElementById("dos");
@@ -24,6 +23,7 @@ function init(){
 	var igual = document.getElementById("igual");
 	var reset  = document.getElementById("reset");
 	operacion = ""
+
 	uno.onclick = function(e){
 		if(finalizado){
 			limpiar();
@@ -90,13 +90,9 @@ function init(){
 		}
 		resultado.textContent = resultado.textContent + "."
 	}
-
-
 	reset.onclick = function(e){
 		resetear();
 	}
-
-
 	suma.onclick = function(e){
 		if(operacion!=""){
 		  operacion = "+";
@@ -105,7 +101,6 @@ function init(){
 		  operacion = "+";
 		  limpiar();
 		}
-
 	}
 	resta.onclick = function(e){
 		if(operacion!=""){
@@ -141,44 +136,39 @@ function init(){
 		resolver();
 	}
 
-
-
-function limpiar(){
-	resultado.textContent = ""
-	finalizado = false;
-}
-
-function resetear(){
-	resultado.textContent = ""
-	variableA = 0;
-	variableB = 0;
-	operacion = "";
-}
-
-
-function resolver(){
-  var res = 0;
-  switch(operacion){
-    case "+":
-      res = parseFloat(variableA) + parseFloat(variableB);
-      break;
-    case "-":
-        res = parseFloat(variableA) - parseFloat(variableB);
-        break;
-    case "*":
-      res = parseFloat(variableA) * parseFloat(variableB);
-      break;
-    case "/":
-      if(variableB==0){
-      	res = "Infinity"
-      	break;
-      }
-      res = parseFloat(variableA) / parseFloat(variableB);
-      break;
-  }
-  resetear();
-  resultado.textContent = res;
-  finalizado = true;
-}
+	function limpiar(){
+		resultado.textContent = ""
+		finalizado = false;
+	}
+	function resetear(){
+		resultado.textContent = ""
+		variableA = 0;
+		variableB = 0;
+		operacion = "";
+	}
+	function resolver(){
+	  var res = 0;
+	  switch(operacion){
+	    case "+":
+	      res = parseFloat(variableA) + parseFloat(variableB);
+	      break;
+	    case "-":
+	        res = parseFloat(variableA) - parseFloat(variableB);
+	        break;
+	    case "*":
+	      res = parseFloat(variableA) * parseFloat(variableB);
+	      break;
+	    case "/":
+	      if(variableB==0){
+	      	res = "Infinity"
+	      	break;
+	      }
+	      res = parseFloat(variableA) / parseFloat(variableB);
+	      break;
+	  }
+	  resetear();
+	  resultado.textContent = res;
+	  finalizado = true;
+	}
 
 }

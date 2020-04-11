@@ -1,0 +1,21 @@
+.Tasks{
+	background-color: red;
+	padding: 5px;
+	width: 400px;
+	float: left;
+}
+.Task{
+	background-color: blue;
+	margin: 5px;
+	padding-top: 5px;
+	color: white;
+	padding-bottom: 10px;
+}
+
+.Tasks h2{
+	margin: 0px;
+}
+
+.Task button{
+	margin: 5px;
+}

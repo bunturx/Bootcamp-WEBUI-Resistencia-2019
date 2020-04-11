@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Star Wars</title>
+		<link rel="stylesheet" type="text/css" href="starwars.css">
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<h1>Star Wars</h1>
+			</header>
+			<nav>
+				<div id="selectmoviebox" class="hidden">
+					<select id="selectmovie">
+					</select>
+					<button id="search-button" onclick="search_film();">GO!</button>
+				</div>
+			</nav>
+			<div id="error">
+			</div>
+			<div id="loading">
+				<img src="loading.gif" height="100px;">
+			</div>
+			<div id="data-box" class="yellow hidden">
+				<div id="movie-box" class="box">
+					<div id="movie-box-data">
+					</div>
+				</div>	
+				<div id="character-box" class="box">
+					<div id="character-box-data">
+					</div>
+					<div class="more">
+						<button id="more-character" onclick="render_more_info_character()">More!</button>
+					</div>
+				</div>
+				<div id="planet-box" class="box">
+					<div id="planet-box-data">
+					</div>
+					<div class="more">
+						<button id="more-planet" onclick="render_more_info_planet()">More!</button>
+					</div>					
+				</div>
+				<div id="starship-box" class="box">
+					<div id="starship-box-data">
+					</div>
+					<div class="more">
+						<button id="more-starship" onclick="render_more_info_starship()">More!</button>
+					</div>					
+				</div>
+				<div id="vehicle-box" class="box">
+					<div id="vehicle-box-data">
+					</div>
+					<div class="more">
+						<button id="more-vehicle" onclick="render_more_info_vehicle()">More!</button>
+					</div>					
+				</div>
+				<div id="specie-box" class="box">
+					<div id="specie-box-data">
+					</div>
+					<div class="more">
+						<button id="more-specie" onclick="render_more_info_specie()">More!</button>
+					</div>					
+				</div>
+			</div>
+		</div>
+		<script src="starwars.js"></script>
+	</body>
+</html>

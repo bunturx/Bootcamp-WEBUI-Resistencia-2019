@@ -1,0 +1,11 @@
+.App{
+	text-align: center;
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: yellow;
+}
+.extra{
+	background-color: green;
+	padding: 50px;
+}
