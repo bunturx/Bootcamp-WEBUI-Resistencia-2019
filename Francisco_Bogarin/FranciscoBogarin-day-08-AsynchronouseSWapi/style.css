@@ -1,0 +1,73 @@
+body{
+    color: darkblue
+}
+.display-data{
+    display: flex;
+    flex-direction: row;
+    margin-left: 115px;
+    overflow-wrap: break-word;
+}
+.labelContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-bottom: solid 2px;
+    font-size: 18px;
+    font-family: sans-serif;
+    margin-top: 100px;
+    justify-content: start;
+}
+.labelContainer label{
+    width: 243px;
+    justify-content: start;
+}
+.justified{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: 18px;
+    font-family: sans-serif;
+    margin-left: 115px;
+}
+
+main section {
+    font-family: sans-serif;
+    font-weight: 500;
+    overflow-wrap: break-word;
+    width: 243px;
+}
+
+main p{
+    display: flex;
+    margin-left: 115px;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+
+#selectMenu{
+    color: darkblue;
+    border: solid 1px;
+    width: 150px;
+    height: 50px;
+    margin-left: 370px;
+}
+nav {
+    margin-top: 50px;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+nav button{
+    width: 140px;
+    height: 60px;
+    border: solid 1px;
+    border-style: solid;
+    color: darkblue;
+    background: none;
+    margin-left: 115px
+}
+label span{
+    margin-left: 10px;
+}
