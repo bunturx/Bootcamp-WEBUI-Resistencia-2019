@@ -1,0 +1,31 @@
+.itemInfo {
+  height: 86%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: minmax(200px, 1fr) 3.5fr;
+  grid-gap: 20px;
+  align-items: stretch;
+  overflow: scroll;
+}
+.itemPoster {
+  height: auto;
+  max-height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .itemInfo {
+    grid-template-rows: 50% 1fr;
+    grid-template-columns: 1fr;
+    position: relative;
+    right: 2%;
+  }
+  .itemPoster {
+    position: relative;
+    left: 50%;
+    height: 100%;
+    width: auto;
+    transform: translateX(-50%);
+  }
+}

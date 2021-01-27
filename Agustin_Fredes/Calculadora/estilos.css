@@ -1,0 +1,85 @@
+:root 
+	{
+		--primary-color: white;
+		--screen-color: #111111;
+		--border-color: black;
+		--seconday-color: linear-gradient(to right, #f09400 0%,#be7500 100%);
+		--font-color: black;
+		--font-screen-color: white;
+		--equal-color: linear-gradient(to bottom, #0090f0 0%,#0072be 100%);;
+	}
+	*
+			{
+				margin: 0px;
+				padding: 0px;
+			}
+		html, body
+				{
+					width: 100%;
+					height: 100%;
+					background: black;
+				}
+			.screen
+					{
+						background: var(--screen-color);
+						width: 100%;
+						height: 30%;
+						color: var(--font-screen-color);
+						font-size: 8vmin;
+						max-width: 600px;
+						position: absolute;
+						right: 50%;
+						transform: translateX(50%);
+						overflow: hidden;
+					}
+				.screenText
+						{
+						position: absolute;
+						right: 0%;
+						bottom: 0%;
+						}
+			.buttons
+					{
+						width: 100%;
+						height: 17.5%;
+						max-width: 600px;
+						position: absolute;
+						right: 50%;
+						transform: translateX(50%);
+						top: 30%;
+					}
+				.buttonsSection
+						{
+							height: 100%;
+							width: 100%;
+							display: flex;
+							background: var(--border-color);
+						}
+						.button
+								{
+									width: 25%;
+									height: 100%;
+									background: var(--primary-color);
+									color: var(--font-color);
+									border: 1px solid var(--border-color);
+									border-radius: 3px;
+									font-size: 7.5vmin;
+									transition: 100ms;
+								}
+						.button:hover
+								{
+									filter: brightness(1.1);
+									color: #030303;
+								}
+						.button:active
+								{
+									transform: scale(0.95);
+								}
+							.buttonFunc
+									{
+										background: var(--seconday-color); 
+									}
+								#buttonEqual
+										{
+											background: var(--equal-color);
+										}

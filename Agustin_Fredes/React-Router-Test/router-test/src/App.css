@@ -1,0 +1,94 @@
+*
+    {
+      margin: 0px;
+      padding: 0px;
+    }
+  html, body, .App, #root
+      {
+        width: 100%;
+        height: 100%;
+        position: relative;
+      }
+      .navBar
+          {
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+            height: 10%;
+            align-items: center;
+            background: black
+          }
+          .navBar > *:link, *:visited
+              {
+                transition: 200ms;
+                padding: 3vmin;
+                text-decoration: none;
+                outline: none;
+                color: rgb(199, 199, 199);
+              }
+          .navBar > *:hover
+              {
+                transform: scale(1.2);
+                color: rgb(255, 255, 255);
+              }
+          .navBar > *:active
+              {
+                transform: scale(0.9);
+              }
+      main
+          {
+            width: 100%;
+            height: 90%;
+            background: red;
+            text-align: center;
+          }
+      .contact
+            {
+              width: 100%;
+              height: 90%;
+              background: gray;
+              text-align: center;
+            }
+          .contactBox
+              {
+                background: rgb(0, 0, 0);
+                color: white;
+                width: 40%;
+                top: 20%;
+                height: 60%;
+                position: absolute;
+                left: 30%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                border-radius: 20px;
+              }
+        .InputWDesc
+              { 
+                text-align: center
+              }
+              .InputWDescInput
+                  {
+                    border-radius: 10px;
+                    height: 3.2vmin;
+                    text-align: center
+                  }
+              .MessageAreaInput
+                  {
+                    width: 50vmin;
+                    height: 20vmin;
+                    padding: 7px;
+                    resize: none;
+                    border-radius: 10px;
+
+                  }
+        .ButtonSubmit
+            {
+              width: 60%;
+              height: 9%;
+              font-size: 3vmin;
+              outline: none;
+              background: gray;
+              border: none;
+            }
