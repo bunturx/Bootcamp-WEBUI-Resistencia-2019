@@ -1,0 +1,330 @@
+[33mcommit 133dae20f11834d60cb8591500df7389d76eaceb[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31mupstream/master[m[33m)[m
+Merge: efba753 cf4e260
+Author: Benjamin Kugler <benjamin.kugler1996@gmail.com>
+Date:   Mon Jul 29 19:22:31 2019 -0300
+
+    Merge branch 'Day04-ResponsiveDesign'
+
+[33mcommit efba753ace0a7877e69f278e7e8e00e8b453c4e4[m[33m ([m[1;32mBenja[m[33m)[m
+Merge: 83fb1c1 6487151
+Author: Benjamin Kugler <benjamin.kugler1996@gmail.com>
+Date:   Mon Jul 29 12:56:37 2019 -0300
+
+    Merge branch 'master' of github.com:bunturx/Bootcamp-WEBUI-Resistencia-2019 into Benja
+
+[33mcommit 83fb1c1d5e1688d7a1f34b423939da2ac3e13325[m[33m ([m[1;31mupstream/Benja[m[33m)[m
+Author: Benjamin Kugler <benjamin.kugler1996@gmail.com>
+Date:   Mon Jul 29 12:50:14 2019 -0300
+
+    Added day 4 first Homework
+
+[33mcommit b38b67e2113b185d3734baa9b78f7eb9c8522142[m
+Author: Benjamin Kugler <benjamin.kugler1996@gmail.com>
+Date:   Mon Jul 29 12:47:49 2019 -0300
+
+    Added day 4 first Homework
+
+[33mcommit cf4e260f42ffe5532e398016bc39a83d197fee8a[m[33m ([m[1;32mDay04-ResponsiveDesign[m[33m)[m
+Author: Benjamin Kugler <benjamin.kugler1996@gmail.com>
+Date:   Mon Jul 29 12:39:23 2019 -0300
+
+    Added day4 first homework
+
+[33mcommit 6487151da1288874619db56cc4aa14c30e39bcde[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 9aa627c 79a061a
+Author: Moises Ruiz Diaz <ruizdiazm@gmail.com>
+Date:   Sun Jul 28 22:14:34 2019 -0300
+
+    Merge pull request #10 from fnvecchietti/FranciscoBogarin-day-03-CSS-LAYOUT
+    
+    FranciscoBogarin-DAY-03-CSS-LAYOUT
+
+[33mcommit 79a061a30e98c82c2c1a0de5a17296ffc27cbafb[m
+Author: Francisco Bogarin <franciscobogarin@outlook.com.ar>
+Date:   Sun Jul 28 02:45:32 2019 -0300
+
+    del invalid comment, del blank lines, fix identation.
+
+[33mcommit ad1b9877b8f1db04e153f3d93a24afb9524e11cf[m
+Author: Francisco Bogarin <franciscobogarin@outlook.com.ar>
+Date:   Sat Jul 27 02:09:38 2019 -0300
+
+    homework css magazine layout with accessibility  day 3
+
+[33mcommit 5387017140989f560135863ec1b873326b802215[m
+Merge: 4b0f181 9aa627c
+Author: Francisco Bogarin <franciscobogarin@outlook.com.ar>
+Date:   Sat Jul 27 01:58:45 2019 -0300
+
+    Merge branch 'master' of https://github.com/bunturx/Bootcamp-WEBUI-Resistencia-2019
+
+[33mcommit 9aa627c0451adf2eb8a06f218880294b2027c94c[m
+Author: Moises Ruiz Diaz <ruizdiazm@gmail.com>
+Date:   Fri Jul 26 23:00:31 2019 -0300
+
+    Adding ppt day 3 - CSS
+
+[33mcommit 4b0f1813478c7cc4350189fba5f474d6ec9ecbbc[m
+Merge: 19a2243 7e462e0
+Author: Francisco Bogarin <franciscobogarin@outlook.com.ar>
+Date:   Fri Jul 26 20:17:48 2019 -0300
+
+    Merge branch 'master' of https://github.com/bunturx/Bootcamp-WEBUI-Resistencia-2019
+
+[33mcommit 7e462e0b2733b5b1f4bf71bbbde43976bfe4164e[m
+Merge: 9e55a5f 5a0adfd
+Author: Moises Ruiz Diaz <ruizdiazm@gmail.com>
+Date:   Fri Jul 26 20:06:54 2019 -0300
+
+    Merge pull request #4 from fnvecchietti/FranciscoBogarin-day-02-SEMANTIC-HTML
+    
+    FranciscoBogarin-day-02-HTML Semantic
+
+[33mcommit 9e55a5f69444ad42c6b6adb003c442da59a14f42[m
+Merge: 11293e6 4bfcbe7
+Author: Moises Ruiz Diaz <ruizdiazm@gmail.com>
+Date:   Fri Jul 26 20:06:39 2019 -0300
+
+    Merge pull request #6 from Patoncho/Franco
+    
+    day 2-html-fundamentos: Primer commit, html con estructura y,
+
+[33mcommit 11293e69e9682adc80dabfb3148592d035f4530f[m
+Merge: ebb64d2 64d269e
+Author: Moises Ruiz Diaz <ruizdiazm@gmail.com>
+Date:   Fri Jul 26 20:06:24 2019 -0300
+
+    Merge pull request #5 from benjakugler96/master
+    
+    PR
+
+[33mcommit ebb64d24fc98dd2cca1d8618ba799d11d4e8bc30[m
+Merge: 9987653 8d9dd3a
+Author: Moises Ruiz Diaz <ruizdiazm@gmail.com>
+Date:   Fri Jul 26 20:05:29 2019 -0300
+
+    Merge pull request #7 from Alejandro-Nicolas-Presch/Alejandro-Presch-day-1-js-basico
+    
+    Primer commit agregando carpeta con datos requeridos
+
+[33mcommit 99876532ccc2f523b00c9406d8a6aa05999baaca[m
+Merge: db52635 959eee6
+Author: Moises Ruiz Diaz <ruizdiazm@gmail.com>
+Date:   Fri Jul 26 19:04:21 2019 -0300
+
+    Merge pull request #8 from BrhmDnsK263/BrahimDenysiuk-day-2-html
+    
+    Brahim denysiuk day 2 html
+
+[33mcommit db52635ad54ec8824f0914bb3b29adacfb269de3[m
+Merge: 5947151 251a618
+Author: Moises Ruiz Diaz <ruizdiazm@gmail.com>
+Date:   Fri Jul 26 19:02:53 2019 -0300
+
+    Merge pull request #2 from BrhmDnsK263/BrahimDenysiuk-day-01-git
+    
+    day-01-git: add Denysiuk's personal information
+
+[33mcommit 5947151bc47ce24c61031cba0ecbee41a4a1c64e[m
+Merge: 22fabd4 418225a
+Author: Moises Ruiz Diaz <ruizdiazm@gmail.com>
+Date:   Fri Jul 26 19:02:21 2019 -0300
+
+    Merge pull request #3 from fnvecchietti/FranciscoBogarin-day-00-UploadNamedFolder
+    
+    FranciscoBogarin-day-01-GIT
+
+[33mcommit 959eee64f91169dde2bb4783d811b588570fac2c[m
+Author: BrhmDnsK263 <denysiuk.isi@gmail.com>
+Date:   Fri Jul 26 18:52:44 2019 -0300
+
+    day-02-html: create form
+
+[33mcommit 8d9dd3a5b866ef30172d0db605e527f6ca84033a[m
+Author: “Alejandro <alepresch@gmail.com>
+Date:   Fri Jul 26 10:16:50 2019 -0300
+
+    Primer commit agregando carpeta con datos requeridos
+
+[33mcommit 64d269eb1a256312700a770066e34480e284637e[m
+Author: Benjamin Kugler <benjamin.kugler1996@gmail.com>
+Date:   Fri Jul 26 09:42:09 2019 -0300
+
+    Removed duplicated folders
+
+[33mcommit 5e21ab45e311673c70a22f65dbf6befa1e955fa5[m
+Merge: 0ecc642 2ed946d
+Author: Benjamin Kugler <benjamin.kugler1996@gmail.com>
+Date:   Fri Jul 26 09:35:38 2019 -0300
+
+    Merge branch 'master' of github.com:benjakugler96/Bootcamp-WEBUI-Resistencia-2019
+    
+    Merge with master
+
+[33mcommit 0ecc642b5ce5680a590ca5ee7f868a311b890667[m
+Author: Benjamin Kugler <benjamin.kugler1996@gmail.com>
+Date:   Fri Jul 26 09:34:32 2019 -0300
+
+    Added day3 and renamed folders
+
+[33mcommit 4bfcbe75372546769772c32357d4e687eec1ec29[m
+Author: Franco <silvafranco254@gmail.com>
+Date:   Fri Jul 26 07:19:43 2019 -0300
+
+    day 2-html-fundamentos: Primer commit, html con estructura y, falta terminar formulario
+
+[33mcommit 19a2243df0eedfb1654fd7035ed9052c039d98e7[m
+Merge: 104524f 5a0adfd
+Author: fnvecchietti <49009519+fnvecchietti@users.noreply.github.com>
+Date:   Fri Jul 26 00:15:00 2019 -0300
+
+    Merge pull request #3 from fnvecchietti/FranciscoBogarin-day-02-SEMANTIC-HTML
+    
+    Francisco bogarin day 02 semantic html
+
+[33mcommit 5a0adfdfaa619a16830de0d1f11300b2aecad737[m
+Author: Francisco Bogarin <franciscobogarin@outlook.com.ar>
+Date:   Fri Jul 26 00:09:26 2019 -0300
+
+    accessibility test with Axe coding refactor and other things deleted
+
+[33mcommit 73e9aa071ba1a942662d579bb149b8dbfbf30ea1[m
+Merge: af44ae9 2ed946d
+Author: Benjamin Kugler <benjamin.kugler1996@gmail.com>
+Date:   Thu Jul 25 21:10:37 2019 -0300
+
+    testing
+
+[33mcommit af44ae9f5336078f9cd107e6d4b49487efef76fb[m
+Author: Benjamin Kugler <benjamin.kugler1996@gmail.com>
+Date:   Thu Jul 25 21:09:14 2019 -0300
+
+    testing git
+
+[33mcommit 56493334db109e03b6981ef506d7cde7691ea21a[m
+Author: Benjamin Kugler <benjamin.kugler1996@gmail.com>
+Date:   Thu Jul 25 20:54:00 2019 -0300
+
+    Added magazine cover
+
+[33mcommit 2ed946d3d72d65dd3e71e1e3ee4b9888a355c4d5[m
+Author: benjakugler96 <53273645+benjakugler96@users.noreply.github.com>
+Date:   Thu Jul 25 20:51:15 2019 -0300
+
+    Add files via upload
+    
+    Add magazine cover
+
+[33mcommit f99f5211f7df869f2bf388d84268e00844525ab1[m
+Author: benjakugler96 <53273645+benjakugler96@users.noreply.github.com>
+Date:   Thu Jul 25 16:09:29 2019 -0300
+
+    Add files via upload
+
+[33mcommit 1ff5e25aab57c6492c219b335801b9cdd6a115b9[m
+Merge: 8f27d9b 22fabd4
+Author: Benjamin Kugler <benjamin.kugler1996@gmail.com>
+Date:   Thu Jul 25 16:07:40 2019 -0300
+
+    Merge branch 'master' of github.com:bunturx/Bootcamp-WEBUI-Resistencia-2019 into Benja
+
+[33mcommit 8f27d9bd2eca911a53a114b35f8d4455860631a9[m
+Author: Benjamin Kugler <benjamin.kugler1996@gmail.com>
+Date:   Thu Jul 25 16:06:30 2019 -0300
+
+    Adding day 2 homework
+
+[33mcommit 2604136bcd9bf635c7c03eca9e188e42db8bf0cb[m
+Author: Francisco Bogarin <franciscobogarin@outlook.com.ar>
+Date:   Thu Jul 25 15:54:46 2019 -0300
+
+    Upload HomeWork Day2 Dev Form
+
+[33mcommit 6ca8d934fb2c2d41354224b0acb4f82996d3ff39[m
+Author: Benjamin Kugler <benjamin.kugler1996@gmail.com>
+Date:   Thu Jul 25 15:51:17 2019 -0300
+
+    Agrego tareas del dia 2(revista, form)
+
+[33mcommit 104524f73d07f6ba6e159d5f944608f994a5dc9e[m
+Merge: ec85098 a44427d
+Author: fnvecchietti <49009519+fnvecchietti@users.noreply.github.com>
+Date:   Thu Jul 25 13:37:51 2019 -0300
+
+    Merge pull request #2 from fnvecchietti/FranciscoBogarin-day-02-SEMANTIC-HTML
+    
+    added DAY 2 folder & form exercise
+
+[33mcommit a44427d51e18d41fd4c4a285d2f5c73a16d0637d[m
+Author: Francisco Bogarin <franciscobogarin@outlook.com.ar>
+Date:   Thu Jul 25 13:35:56 2019 -0300
+
+    added DAY 2 folder & form exercise
+
+[33mcommit ec850989ea96a41c40aaed880919aa647753e128[m
+Merge: 22fabd4 418225a
+Author: fnvecchietti <49009519+fnvecchietti@users.noreply.github.com>
+Date:   Thu Jul 25 13:18:46 2019 -0300
+
+    Merge pull request #1 from fnvecchietti/FranciscoBogarin-day-00-UploadNamedFolder
+    
+    upload named folder as email indicates}
+
+[33mcommit 251a618d718257428d924554f8af4d9bc1decbac[m
+Author: BrhmDnsK263 <denysiuk.isi@gmail.com>
+Date:   Thu Jul 25 11:33:44 2019 -0300
+
+    day-01-git: add Denysiuk's personal information
+
+[33mcommit 418225a804283093054499ba5edc11adac3193f8[m
+Author: Francisco Bogarin <franciscobogarin@outlook.com.ar>
+Date:   Thu Jul 25 11:19:15 2019 -0300
+
+    upload named folder as email indicates}
+
+[33mcommit 22fabd47de774b9685af44f45cbd8055d1ca59f3[m
+Merge: 5e500d4 e7b8997
+Author: Moises Ruiz Diaz <ruizdiazm@gmail.com>
+Date:   Thu Jul 25 10:34:41 2019 -0300
+
+    Merge pull request #1 from bunturx/FernandoFamoso-day-24-js-basico
+    
+    Merge Fernando Famoso folder
+
+[33mcommit 5e500d47a926b3a4e6b302bc12e9f072b32edcc3[m
+Author: Moises Ruiz Diaz <ruizdiazm@gmail.com>
+Date:   Thu Jul 25 10:31:15 2019 -0300
+
+    Adding Presentaciones folder and ppt day 1&2
+
+[33mcommit f946af62f252add480f0ac9ce11c23044ebf384f[m
+Author: benjakugler96 <53273645+benjakugler96@users.noreply.github.com>
+Date:   Wed Jul 24 23:02:36 2019 -0300
+
+    Add files via upload
+    
+    Agrego carpeta con informacion de benjamin kugler
+
+[33mcommit 7ffe39b731df6b53d05520cc0de7f2a474ca4e9e[m[33m ([m[1;31morigin/Benja[m[33m)[m
+Author: Benjamin Kugler <benjamin.kugler1996@gmail.com>
+Date:   Wed Jul 24 22:55:46 2019 -0300
+
+    Agrego carpeta con info de BenjaKugler
+
+[33mcommit e7b89971a46b24f958d095b37db357f59d174d93[m
+Author: Famoso Fernando Gabriel <gabrielfamoso1996@gmail.com>
+Date:   Wed Jul 24 22:34:31 2019 -0300
+
+    day-24-js-basico:First commit, writing functions signature, implementation commit later
+
+[33mcommit bf2acb7dce9768ab8929b8cff161b12a6e3fa023[m
+Author: Bunturx <ruizdiazm@gmail.com>
+Date:   Wed Jul 24 20:05:10 2019 -0300
+
+    Update Readme.md
+
+[33mcommit f7dad553aa063d0d0d74b43b3292c2f98df9bad6[m
+Author: Bunturx <ruizdiazm@gmail.com>
+Date:   Wed Jul 24 20:02:40 2019 -0300
+
+    Create Readme.md

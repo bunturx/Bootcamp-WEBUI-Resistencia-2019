@@ -1,0 +1,29 @@
+
+.movieDiv{
+    height: 300px;
+    width: 20%;
+    float:left;
+    margin-top: 25px;
+    text-align: center
+}
+.movieDiv img{
+    margin: 0 auto;
+    display: block
+}
+.divider{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+.movie-desc-section{
+    display: flex;
+}
+.movie-poster{
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aside-content{
+    width: 48%;
+}

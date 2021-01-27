@@ -1,0 +1,9 @@
+.container{
+    width: 90%;
+    margin: 15px auto;
+    text-align: center;
+    background-color: rgb(173, 170, 170);
+    border-radius: 5px;
+    border-top: 4px solid rgb(18, 168, 18);
+    border-bottom:4px solid rgb(18, 168, 18);
+}

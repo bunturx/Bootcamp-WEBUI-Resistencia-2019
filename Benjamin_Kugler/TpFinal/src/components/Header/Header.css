@@ -1,0 +1,13 @@
+header{
+    background-color: rgb(117, 219, 86);
+    margin:0;
+    width: 100%;
+    display: flex;
+}
+.logo{
+    width: 30%;
+    color: white;
+    background-image: url(../../img/globant-logo.svg);
+    background-repeat: no-repeat;
+    margin-top: 5px 
+}

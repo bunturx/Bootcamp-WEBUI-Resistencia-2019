@@ -1,0 +1,22 @@
+.MovieDescription{
+    position: relative;
+}
+.movie-title{
+    width: 100%;
+    margin: 50px;
+    font-size: 25px;
+}
+
+.atribute-title{
+    width: 100%;
+    font-size: 25px;
+    border-bottom: 1px solid black;
+}
+.movie-desc-section{
+    position: relative;
+    margin: 15px;
+}
+.atribute{
+    width: 30%;
+    float: left;
+}
